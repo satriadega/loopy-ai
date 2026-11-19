@@ -1,0 +1,15 @@
+services:
+  loopy:
+    build: .
+    ports:
+      - "127.0.0.1:3001:3001"
+    environment:
+      HF_TOKEN: ${HF_TOKEN:-}
+      WALLPAPER_INTERVAL_SECONDS: ${WALLPAPER_INTERVAL_SECONDS:-}
+    volumes:
+      - loopy-data:/app/backend/data
+      - loopy-outputs:/app/backend/outputs
+
+volumes:
+  loopy-data:
+  loopy-outputs:

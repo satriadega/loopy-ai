@@ -1,0 +1,11 @@
+{
+  "name": "@loopy/backend",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js"
+  },
+  "dependencies": { "@gradio/client": "^2.8.0", "express": "^5.1.0" },
+  "optionalDependencies": { "ffmpeg-static": "^5.2.0" }
+}
